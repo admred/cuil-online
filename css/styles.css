@@ -1,0 +1,105 @@
+*{
+    font-family: Monospace;
+    font-size: 1.2rem;
+}
+
+fieldset {
+    border:1px dotted gray;
+}
+
+fieldset legend, .title, .advert, label {
+    font-size:0.8rem;
+    font-family:Arial,sans;
+}
+
+/* https://drafts.csswg.org/css-ui-4/#propdef-caret-shape */
+input[type="text"] {
+    caret-shape:block;
+    caret-color:auto;
+}
+
+.box {
+    display:flex;
+    flex-flow:column;
+    border: 1px solid gray;
+    border-radius:10px;
+    gap: 10px;
+    padding:10px;
+    width:400px;
+}
+
+.input-text {
+    padding: 3px 5px;
+    width: calc(100% - 20px);
+    text-align:center;
+    border:0;
+}
+
+.input-text:focus  {
+    outline:0;
+}
+
+.setting {
+    display:flex;
+    flex-flow:row;
+    gap:0;
+}
+.setting fieldset {
+    width:100%;
+}
+.setting label {
+    font-size:0.8rem;
+}
+
+.output {
+    font-size: 1.6rem;
+}
+
+.actions {
+    text-align:center;
+}
+
+.actions input {
+    font-size:.8rem;
+}
+
+.box-header,.box-footer {
+    margin:20px;
+}
+
+.title {
+    font-size:1.2rem;
+    font-weight:normal;
+    text-align:center;
+}
+
+.advert *{
+    font-size:0.7rem;
+}
+
+.link {
+    color:inherit;
+
+}
+
+.link:hover {
+    color:blue ;
+}
+
+.clipboard {
+    z-index:1;
+    display:inline-block;
+}
+
+.inline {
+    display:flex;
+    flex-flow:row nowrap;
+    gap:20px;
+    justify-content:center;
+}
+
+.sex, .options {
+    width:100%;
+}
+
+

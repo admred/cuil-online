@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Cuil Online</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    
+    <main class="inline">
+        <form class="box" >
+            <div class="box-header">
+                <h1 class="title">Generador de <a href="https://en.wikipedia.org/wiki/Cuil" class="link">Cuil</a></h1>
+            </div>
+            <fieldset class="userinput">
+                <legend>DNI</legend>
+                <input id="dni" class="input input-text" required autocomplete="off" maxlength="8" minlength="7" pattern="^\d\d*$"  autofocus>
+            </fieldset>
+            <div class="inline">
+                <fieldset class="sex">
+                    <legend>Sexo</legend>
+                    <div>
+                        <input type="radio" value="M" name="sex" id="sex-m" checked>
+                        <label for="sex-m">Masculino</label>
+                    </div>
+                    <div>
+                        <input type="radio" value="F"  name="sex" id="sex-f">
+                        <label for="sex-f">Femenino</label>
+                    </div>
+                </fieldset>
+                <fieldset class="options">
+                    <legend>Opciones</legend>
+                    <input type="checkbox" name="options[]" id="compact" value="compact">
+                    <label>Guiones</label>
+                </fieldset>
+            </div>
+            <fieldset class="output">
+                <legend>CUIL</legend>
+                <div class="inline">
+                    <input id="cuil" class="input input-text" readonly>
+                    <a href=""  class="clipboard" id="copy">
+                       <img src="/assets/content_copy_FILL0_wght400_GRAD0_opsz24.png">
+                    </a>
+                </div>
+            </fieldset>
+            <div class="actions">
+                <input type="submit" id="submit" value="Generar">
+                <input type="reset" value="Limpiar">
+            </div>
+            <div class="box-footer">
+                <p class="advert"><span style="color:red">Aviso:</span> El CUIL generado puede ser distinto al de <a href="https://anses.gob.ar" class="link">ANSES</a>.</p>
+            </div>
+        </form>
+    </main>
+    
+<script rel="javascript" src="/js/actions.js"></script>
+</body>
+</html>
