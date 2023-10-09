@@ -68,6 +68,10 @@ copy.addEventListener('click',function(e) {
     document.execCommand('copy')
 })
 
+dni.addEventListener('focus',function(e){
+    cuil.value=""
+})
+
 addEventListener('change',updateCuil)
 
 addEventListener('submit',function(e){
